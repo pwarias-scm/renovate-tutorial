@@ -1,4 +1,6 @@
-{ "packageRules": [
+{ 
+"enabledManagers": ["regex"], 
+"packageRules": [
   {
       "matchDatasources": ["docker"]
     },
