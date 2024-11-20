@@ -6,7 +6,7 @@
     },
     {
       "enabled": true,
-      "matchManagers": ["custom"],
+      "matchManagers": ["regex"],
       "matchPackagePrefixes": ["lodash"],
       "labels": ["renovate", "Review-Bypass"],
       "prBodyNotes": [
