@@ -21,8 +21,9 @@
       "customType": "regex",
       "fileMatch": ["package.json"],
       "matchStrings": [
-        "(?m)lodash*"
-      ]
+        "\"(?<depName>lodash)\":\\s*\"(?<currentValue>\\d+\\.\\d+\\.\\d+)\""
+      ],
+      "datasourceTemplate": "npm"
     }
   ]
 }
