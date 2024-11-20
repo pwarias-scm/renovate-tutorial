@@ -6,7 +6,7 @@
     },
     {
       "enabled": true,
-      "matchManagers": ["custom"],
+      "matchManagers": ["regex"],
       "matchPackagePrefixes": ["lodash"],
       "labels": ["renovate", "Review-Bypass"],
       "prBodyNotes": [
@@ -21,8 +21,9 @@
       "customType": "regex",
       "fileMatch": ["package.json"],
       "matchStrings": [
-        "(?m)lodash*"
-      ]
+        "\"(?<depName>lodash)\":\\s*\"(?<currentValue>\\d+\\.\\d+\\.\\d+)\""
+      ],
+      "datasourceTemplate": "npm"
     }
   ]
 }
