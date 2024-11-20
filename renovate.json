@@ -1,6 +1,5 @@
-  "enabledManagers": ["regex"],
-  "packageRules": [
-    {
+{ "packageRules": [
+  {
       "matchDatasources": ["docker"]
     },
     {
@@ -20,7 +19,8 @@
       "customType": "regex",
       "fileMatch": ["package.json"],
       "matchStrings": [
-        "(?m)lodash*",
-      ],
-    },
+        "(?m)lodash*"
+      ]
+    }
   ]
+}
