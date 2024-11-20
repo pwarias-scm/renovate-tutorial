@@ -1,6 +1,5 @@
 { 
 "enabledManagers": ["regex"],
-"prApproval": true,
 "packageRules": [
   {
       "matchDatasources": ["docker"]
